@@ -13,24 +13,24 @@ public class Cour {
     private int idCoach;
     private int duree;
     private String niveau;
-    private String typeCours;
+    private String typeCour;
 
     public Cour() {
     }
 
-    public Cour(int idCour, int idCoach, int duree, String niveau, String typeCours) {
+    public Cour(int idCour, int idCoach, int duree, String niveau, String typeCour) {
         this.idCour = idCour;
         this.idCoach = idCoach;
         this.duree = duree;
         this.niveau = niveau;
-        this.typeCours = typeCours;
+        this.typeCour = typeCour;
     }
 
-    public Cour(int idCoach, int duree, String niveau, String typeCours) {
+    public Cour(int idCoach, int duree, String niveau, String typeCour) {
         this.idCoach = idCoach;
         this.duree = duree;
         this.niveau = niveau;
-        this.typeCours = typeCours;
+        this.typeCour = typeCour;
     }
 
     public int getIdCour() {
@@ -53,8 +53,8 @@ public class Cour {
         return niveau;
     }
 
-    public String getTypeCours() {
-        return typeCours;
+    public String getTypeCour() {
+        return typeCour;
     }
 
     public void setIdCoach(int idCoach) {
@@ -69,13 +69,13 @@ public class Cour {
         this.niveau = niveau;
     }
 
-    public void setTypeCours(String typeCours) {
-        this.typeCours = typeCours;
+    public void setTypeCour(String typeCour) {
+        this.typeCour = typeCour;
     }
 
     @Override
     public String toString() {
-        return "Cour{" + "idCour=" + idCour + ", idCoach=" + idCoach + ", duree=" + duree + ", niveau=" + niveau + ", typeCours=" + typeCours + '}';
+        return "Cour{" + "idCour=" + idCour + ", idCoach=" + idCoach + ", duree=" + duree + ", niveau=" + niveau + ", typeCours=" + typeCour + '}';
     }
 
 }
